@@ -1,0 +1,14 @@
+{% extends 'cars/base.html' %}
+{% block body %}
+    {% load staticfiles %}
+
+    {% for car in automob %}
+        <div class="carpic">
+            <img src="{% static 'cars/images/'|add:car.name|add:'.jpg'%}">
+            <div class="det">
+                <h2>{{ car.company }} {{ car.name }}</h2>
+                <h4>{{ car.price }}</h4>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,605 @@
+.navbar
+{
+    border-radius: 0;
+
+}
+.navbar-brand
+{
+    font-family: Lobster;
+    font-style: bold;
+    font-weight: bolder;
+
+}
+.backimg
+{
+    position:relative;
+    top:-20px;
+    max-height: 20%;
+
+}
+.backimg img
+{
+
+    height:450px;
+    width:100%;
+}
+
+.box1
+{
+    position: relative;
+    left: 100px;
+    top: -1px;
+}
+.one
+{
+    font-family: Orbitron;
+    font-weight: 700;
+    font-style: italic;
+}
+.two
+{
+    position: absolute;
+    top:30px;
+}
+.two a
+{
+    text-decoration: none;
+    color: darkcyan;
+    font-family: "Andalus";
+}
+.two a h3:hover
+{
+    color:black;
+    border-bottom:3px solid darkred;
+}
+.two a.focus:visited
+{
+    color:black;
+    border-bottom:3px solid darkred;
+}
+.three
+{
+    position: absolute;
+    left:150px;
+    top:30px;
+}
+.three a
+{
+    text-decoration: none;
+    color: darkcyan;
+    font-family: Andalus;
+}
+.three a h3:hover
+{
+    color:black;
+    border-bottom:3px solid darkred;
+}
+.three a:active
+{
+    color:black;
+    border-bottom:3px solid darkred;
+}
+.box2
+{
+    position: relative;
+    top:70px;
+
+}
+.coming
+{
+    position: relative;
+    left:100px;
+    top:100px;
+}
+.coming h3
+{
+    font-family: Lobster;
+    font-weight: 900;
+}
+.coming_box
+{
+    position: relative;
+    top:120px;
+
+
+}
+.row
+{
+    height:auto;
+    padding: 35px;
+}
+.line
+{
+    color:lightblue;
+}
+.text
+{
+    font-family: Inconsolata;
+    font-weight: 700;
+    font-size: medium;
+}
+.gadiname
+{
+    font-weight: bold;
+}
+.dropdown-menu li a:hover
+{
+    color: white;
+    background-color: orangered;
+}
+div.car1
+{
+    text-align: center;
+    border: 1px solid paleturquoise;
+    display: inline-block;
+    position: absolute;
+    height: 330px;
+    width: 310px;
+    left:0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+div.car2
+{
+    text-align: center;
+    color: black;
+    display: inline-block;
+
+    border: 1px solid paleturquoise;
+    position: absolute;
+    left:310px;
+    height: 330px;
+    width: 310px;
+
+}
+div.car3
+{
+    display: inline-block;
+    text-align: center;
+    border: 1px solid paleturquoise;
+    position: absolute;
+    left:620px;
+    height: 330px;
+    width: 310px;
+
+}
+div.car4
+{
+    text-align: center;
+    color: black;
+    display: inline-block;
+    border: 1px solid paleturquoise;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    left:930px;
+    height: 330px;
+    width: 310px;
+}
+.morecoming
+{
+    position: relative;
+    top: 450px;
+    left:360px;
+
+}
+.morecoming a
+{
+    font-family:"Felix Titling";
+    letter-spacing: 1px;
+    font-weight: bold;
+    background-color: white;
+    color:black;
+    border:2px solid lightblue;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.morecoming a:hover
+{
+    border-color: orangered;
+    background-color: orangered;
+    color: white;
+}
+.car1 button a
+{
+
+    font-weight: bold;
+    color:orangered;
+    border-color: orangered;
+}
+
+.car1 button a:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+
+.car1 button:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+
+
+.car2 button a
+{
+    font-weight: bold;
+    color:orangered;
+    border-color: orangered;
+}
+
+.car2 button:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+
+
+
+.car2 button a:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+.car3 button a
+{
+    font-weight: bold;
+    color:orangered;
+    border-color: orangered;
+}
+
+.car3 button:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+
+
+
+.car3 button a:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+.car4 button a
+{
+    font-weight: bold;
+    color:orangered;
+    border-color: orangered;
+}
+
+
+.car4 button:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+
+
+.car4 button a:hover
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: orangered;
+}
+div.videosbox
+{
+    position: relative;
+    background-color: #293448;
+    top:500px;
+    height: 330px;
+    width: 100%;
+}
+.vidstext
+{
+    color: white;
+    font-family: 'Courgette', cursive;
+    position: relative;
+    top:50px;
+    left: 70px;
+}
+footer
+{
+    position: relative;
+    background-color: #293448;
+    top:600px;
+    height:65px;
+}
+iframe
+{
+    display: inline-block;
+    position: relative;
+    top:70px;
+}
+.carousel-inner
+{
+
+    padding-left: 40px;
+
+}
+.fa-copyright
+{
+    position: absolute;
+    color: white;
+    top:35px;
+    left:50px;
+    display: inline-block;
+}
+.fa-facebook
+{
+    position: absolute;
+    display: inline-block;
+    top:30px;
+    right:125px;
+    background-color:plum;
+    border-radius: 45%;
+    width:20px;
+    height:20px;
+    text-align:center;
+}
+.fa-twitter
+{
+    position: absolute;
+    display: inline-block;
+    top:30px;
+    right:97px;
+    background-color:plum;
+    border-radius: 45%;
+    width:20px;
+    height:20px;
+    text-align:center;
+}
+.fa-linkedin
+{
+    position: absolute;
+    display: inline-block;
+    top:30px;
+    right:70px;
+    background-color:plum;
+    border-radius: 45%;
+    width:20px;
+    height:20px;
+    text-align:center;
+}
+.search
+{
+    background-color: white;
+    position: absolute;
+    top:130px;
+    height:350px;
+    width: 320px;
+    right:120px;
+    bottom:300px;
+
+}
+.backimg h2
+{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+}
+.backimg form
+{
+    background-color: white;
+    position: absolute;
+    top:30px;
+    height:350px;
+    width: 320px;
+    right:100px;
+    bottom:300px;
+}
+.backimg form button
+{
+    position: absolute;
+    padding-right: 70px;
+    padding-left: 70px;
+    bottom:10px;
+    left:65px;
+    color: white;
+    background-color: orangered;
+    border-radius: 5px;
+}
+input[type=button]
+{
+    border: none;
+    position: relative;
+    left:30px;
+    font-weight: bolder;
+    background-color: white;
+    color: grey;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+input[type=button]:hover
+{
+    background-color:  #293448;
+    color:white;
+    border-radius:3px;
+}
+#but2
+{
+    border: none;
+    position: relative;
+    left:45px;
+    font-weight: bolder;
+    background-color: white;
+    color: grey;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#but2:hover
+{
+    background-color:  #293448;
+    color:white;
+    border-radius: 3px;
+}
+#final
+{
+    position: relative;
+    top:115px;
+    left:55px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    width:195px;
+    height:30px;
+    border: 1px solid orangered;
+    border-radius: 2px;
+    font-family: "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif;
+}
+.backimg form select
+{
+    height: 55px;
+    width:50%;
+    position: relative;
+    top:35px;
+    left: 70px;
+    background-color:  #293448;
+    color:white;
+    font-weight: 800;
+
+}
+.backimg form select:hover
+{
+    border:5px solid  #293448
+}
+.det
+{
+    position: relative;
+    top:-120px;
+    left:320px;
+}
+.modal-header h4
+{
+    text-align: center;
+}
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    border-width: 5px 0 5px 5px;
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+.info
+{
+    border: 1px solid grey;
+    position: relative;
+    left:279px;
+    top:-212px;
+    height:210px;
+    width: 450px;
+
+}
+.usedimg
+{
+    position: relative;
+    left: 300px;
+    height: 250px;
+
+}
+.usedname
+{
+    position: relative;
+    top: -7px;
+    left:25px;
+}
+.loc
+{
+    position: relative;
+    top:-25px;
+    left: 25px;
+    color: darkcyan;
+}
+.usedprice
+{
+    position: relative;
+    top:-25px;
+    left: 25px;
+}
+.usedinfo
+{
+    position: relative;
+    color: darkcyan;
+    left: 25px;
+    top: -10px;
+}
+#sellerbutton
+{
+    text-decoration: none;
+    background: orangered;
+    position: relative;
+    top:-5px;
+    left:270px;
+    color: white;
+}
+#usedpic
+{
+    border: 2px solid lavender;
+    padding: 8px;
+}
+
+#usedpic:hover
+{
+    cursor: pointer;
+}

@@ -1,0 +1,108 @@
+{% extends 'cars/base.html' %}
+{% block body %}
+    {% load staticfiles %}
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("input").click(function (e) {
+                document.getElementById('id1').value = e.target.value;
+            });
+        });
+    </script>
+    <div class="backimg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLWZLIB6sX0KrZrl27_gTiubVKtFhet-6kOq__MeGi75M520PZVQ">
+        <form action="{% url 'cars:det' %}" method="post">
+            {% csrf_token %}
+            <h2>Search The Right Car</h2>
+            <input type="button"  value="NewCar">
+            <input type="button"  value="UsedCar">
+            <select name="cars">
+                <option  value="Volkswagon">Volkswagon</option>
+                <option  value="Tata">Tata</option>
+                <option  value="Fiat">Fiat</option>
+                <option  value="Audi">Audi</option>
+                <option  value="Maruti">Maruti</option>
+                <option  value="Cheverlot">Chevorlet</option>
+                <option  value="Toyota">Toyota</option>
+                <option  value="Mistubishi">Mistubishi</option>
+            </select>
+            <input type="text" id="id1" name="faaltu" value="" class="abc">
+            <button type="submit" value="Search" id="final" class="btn btn-primary" style="color:white;">Search</button>
+        </form>
+     </div>
+     <div class="box1">
+        <div class="one">
+            <h2>For Your Quick Look</h2>
+        </div>
+        <div class="two">
+            <a class="focus" href="{% url  'cars:coming' %}"><h3>UPCOMING</h3></a>
+        </div>
+        <div class="three">
+            <a href=""><h3>POPULAR</h3></a>
+        </div>
+        <div class="box2">
+            {% for car in gadi %}
+                {% if forloop.counter < 5 %}
+                    <div class="car{{ forloop.counter }}">
+                        <img src="{% static 'cars/images/'|add:car.name|add:'.jpg'%}">
+                        <h4>{{ car.company }} {{ car.name }}</h4>
+                        <h4><i class="fa fa-inr" style="font-size:24px"></i> {{ car.price }}</h4>
+                        <h5>{{ car.launch_date }}</h5>
+                        <button type="button" class="btn btn-default" role="button" style="color: white;"><a href="{% url 'cars:fill' car.name %}">ALERT ME WHEN LAUNCHED</a></button>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="morecoming">
+                <a href="{% url 'cars:coming' %}" class="btn btn-info" role="button">VIEW MORE UPCOMING CARS</a>
+        </div>
+    </div>
+    <div class="videosbox">
+        <div class="vidstext">
+            <h1>Don't miss these videos</h1>
+        </div>
+        <div id = "myCarousel" class = "carousel slide">
+
+   <!-- Carousel indicators -->
+           <ol class = "carousel-indicators">
+              <li data-target = "#myCarousel" data-slide-to = "0" class = "active"></li>
+              <li data-target = "#myCarousel" data-slide-to = "1"></li>
+              <li data-target = "#myCarousel" data-slide-to = "2"></li>
+           </ol>
+
+           <!-- Carousel items -->
+           <div class = "carousel-inner">
+              <div class = "item active">
+                 <iframe width="30%" height="260px" src="https://www.youtube.com/embed/IJBiYXVJ0Q8" frameborder="0" allowfullscreen></iframe>
+                 <iframe width="30%" height="260px"src="https://www.youtube.com/embed/JP8ZThlUSUs" frameborder="0" allowfullscreen></iframe>
+                 <iframe width="30%" height="260px" src="https://www.youtube.com/embed/-ifwiYyofJc" frameborder="0" allowfullscreen></iframe>
+              </div>
+
+              <div class = "item">
+                 <iframe  width="30%" height="260px" src="https://www.youtube.com/embed/JW6YulkMAxQ" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="30%" height="260px" src="https://www.youtube.com/embed/ajccHteVp7w" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="30%" height="260px" src="https://www.youtube.com/embed/VHaZx1CymTs" frameborder="0" allowfullscreen></iframe>
+              </div>
+
+              <div class = "item">
+                 <iframe width="30%" height="260px" src="https://www.youtube.com/embed/6dOm-LTEFtU" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="30%" height="260px" src="https://www.youtube.com/embed/U42pFiDiAgM" frameborder="0" allowfullscreen></iframe>
+                  <iframe width="30%" height="260px" src="https://www.youtube.com/embed/GASmvTPmIt4" frameborder="0" allowfullscreen></iframe>
+              </div>
+           </div>
+
+           <!-- Carousel nav -->
+           <a class = "carousel-control left" href = "#myCarousel" data-slide = "prev">&lsaquo;</a>
+           <a class = "carousel-control right" href = "#myCarousel" data-slide = "next">&rsaquo;</a>
+
+        </div>
+    </div>
+    <footer>
+        <i class="fa fa-copyright">Copyright 2008-2016 Powered By Sanyam Software Pvt. Ltd. All Rights Reserved.</i>
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </footer>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'cars/base.html' %}
+{% block title %}Upcomingcars{% endblock %}
+{% block body %}
+    {% load staticfiles %}
+    <div class="coming">
+        <h3>Upcoming Cars In India</h3>
+    </div>
+    <div class="container">
+        <div class="coming_box">
+            {% for car in cars %}
+                 <div class="row">
+                      <div class="col-sm-4"><img src="{% static 'cars/images/'|add:car.name|add:'.jpg'%}"></div>
+                      <div class="col-sm-8">
+                          <div class="gadiname">
+                              <h2>{{ car.company }} {{ car.name }}</h2>
+                          </div>
+                          <div class="launch">
+                              <h4>Expected Launch Date: {{ car.launch_date }}</h4>
+                          </div>
+                          <div class="price">
+                              <h2>Expected Price:<i class="fa fa-inr" style="font-size:24px"></i> {{ car.price }}</h2>
+                          </div>
+                          <div class="text">
+                              <p>{{ car.about }}</p>
+                          </div>
+                      </div>
+                 </div>
+                <div class="line">
+                    <h3>_____________________________________________________________________________________-</h3>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

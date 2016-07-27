@@ -1,0 +1,43 @@
+{% extends 'cars/base.html' %}
+{% block title %}Used Cars{% endblock %}
+{% block body %}
+    {% for var in vehicle %}
+        <div class="used">
+            <div class="usedimg">
+                <img src="{{ var.pic.url }}"  data-toggle="modal" data-target="#myModal{{ forloop.counter }}" id="usedpic">
+                 <div id="myModal{{ forloop.counter }}" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+            <!-- Modal content-->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">{{ var.company }} {{ var.name }} {{ var.year }}</h4>
+                          </div>
+                          <div class="modal-body">
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="info">
+                    <div class="usedname">
+                        <h4>{{ var.company }} {{ var.name }}</h4>&nbsp;&nbsp;
+                    </div>
+                    <div class="loc">
+                    <span class="glyphicon glyphicon-map-marker">{{ var.place }}</span>
+                    </div>
+                    <div class="usedprice">
+                        <h3><i class="fa fa-inr" style="font-size:24px"></i> {{ var.price }}</h3>
+                    </div>
+                    <div class="usedinfo">
+                        <h4>{{ var.year }} <strong>.</strong> {{ var.driven }}Kms <strong>.</strong> {{ var.oil }} <strong>.</strong> {{ var.owner_type }}</h4>
+                    </div>
+                    <button type="button" class="btn btn-default" role="button" id="sellerbutton"><a href="#" style="text-decoration: none; color: white">GET SELLER DETAILS</a></button>
+                 </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
